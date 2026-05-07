@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { searchBooks } from '../api/booksApi'
 import BookList from '../components/BookList'
 
-function SearchPage() {
+function SearchPage({ addToCollection }) {
   const [query, setQuery] = useState('')
   const [books, setBooks] = useState([])
   const [loading, setLoading] = useState(false)
@@ -35,7 +35,7 @@ function SearchPage() {
 
       {loading && <p>Laddar...</p>}
       {error && <p>{error}</p>}
-      {books.length > 0 && <BookList books={books} />}
+      {books.length > 0 && <BookList books={books} addToCollection={addToCollection} />}
     </div>
   )
 }
