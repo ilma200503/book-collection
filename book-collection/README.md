@@ -3,7 +3,7 @@
 **Ilma Majdanac**
 
 ## Projektbeskrivning
-Projektet BookCollcetion ville jag testa på att göra efetrsom jag själv läser mycket böcker och vill ha en sida jag kan hitta upp och spara mina favorit böcker på. Jag ville göra den simpel till en början och implementerade verktyg som, 1. att man kan söka upp sin bok, 2. lägga till boken i sin personliga online samling, 3. lägga personliga kommentarer, 4.Samlingen samt kommentarer sparas i localStorage så att det finns kvar även efter en hard refresh. Jag har hittat en liknande sida vid namnet goodreads, därav kan jag samtidigt konstatera att behovet till en sån här sida finns. All min data hämtas från Open Library API, jag valde detta API:et eftersom den hade alla möjliga böcker listat, allt från super gamla böcker till de nysläppta böckerna.
+Projektet BookCollcetion ville jag testa på att göra efetrsom jag själv läser mycket böcker och vill ha en sida jag kan hitta upp och spara mina favorit böcker på. Jag ville göra den simpel till en början och implementerade verktyg som, 1. att man kan söka upp sin bok, 2. lägga till boken i sin personliga online samling, 3. lägga personliga kommentarer, 4.Samlingen samt kommentarer sparas i localStorage så att det finns kvar även efter en hard refresh. Jag har hittat en liknande sida vid namnet goodreads, därav kan jag samtidigt konstatera att behovet till en sån här sida finns. All min data hämtas från Open Library API, jag valde detta API:et eftersom den hade alla möjliga böcker listat, allt från super gamla böcker till de nysläppta böckerna. Obs: Skapade samma projekt men fick skrapa den och börja om pga många errors, så detta är en mer finslipad version av mitt första projekt.
 
 ## API
 Open Library API: (https://openlibrary.org/developers/api)
