@@ -1,16 +1,46 @@
-# React + Vite
+# Projekt: Book Collection
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Ilma Majdanac**
 
-Currently, two official plugins are available:
+## Projektbeskrivning
+Projektet BookCollcetion ville jag testa på att göra efetrsom jag själv läser mycket böcker och vill ha en sida jag kan hitta upp och spara mina favorit böcker på. Jag ville göra den simpel till en början och implementerade verktyg som, 1. att man kan söka upp sin bok, 2. lägga till boken i sin personliga online samling, 3. lägga personliga kommentarer, 4.Samlingen samt kommentarer sparas i localStorage så att det finns kvar även efter en hard refresh. Jag har hittat en liknande sida vid namnet goodreads, därav kan jag samtidigt konstatera att behovet till en sån här sida finns. All min data hämtas från Open Library API, jag valde detta API:et eftersom den hade alla möjliga böcker listat, allt från super gamla böcker till de nysläppta böckerna.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## API
+Open Library API: (https://openlibrary.org/developers/api)
 
-## React Compiler
+## Instruktioner för att köra projektet
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+1. Klona mitt repot:
+   git clone https://github.com/ilma200503/book-collection
 
-## Expanding the ESLint configuration
+2. Gå in i mappen:
+   cd book-collection/book-collection
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+3. Installera beroenden:
+   npm install
+
+4. Starta projektet:
+   npm run dev
+
+5. Öppna sidan/projektet [http://localhost:5173] i webbläsaren.
+
+## Implementerade features
+-  Söka efter böcker via Open Library API
+-  Visa detaljsida för varje bok
+-  Spara böcker till sin personliga samling (Create)
+-  Redigera kommentarer/anteckningar om böcker (Update)
+-  Ta bort böcker från sin personliga samlingen (Delete)
+-  Samlingen sparas i localStorage (finns kvar efter hard refresh)
+-  Klickbara boktitlar i personliga samlingen
+
+## Tekniker
+- React + Vite
+- React Router DOM
+- Axios
+- Open Library API
+- localStorage
+
+## Kända begränsningar
+- Samlingen sparas endast lokalt i webbläsaren (ingen databas tillagd)
+- Ändringar i Open Library API kan påverka projektet/webbsidan
+- Lång väntetid när man söker på böcker
