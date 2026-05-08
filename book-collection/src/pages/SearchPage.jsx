@@ -24,7 +24,7 @@ function SearchPage({ addToCollection }) {
 
   return (
     <div>
-      <h1>Sök böcker</h1>
+      <h1>Sök böcker🔍</h1>
       <input
         type="text"
         placeholder="Sök efter en bok..."
